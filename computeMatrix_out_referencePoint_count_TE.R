@@ -4,6 +4,9 @@
 ###note:must be one bed file one gz file.
 
 ##################### start works ###################################
+
+rm(list = ls())
+
 txt1=read.table('newBW_1_random_by_total_TE_ChIP_level.gz',skip=1)
 txt2=read.table('newBW_1_totalTE_not_overlap_gene_ChIP_level.gz',skip=1)
 txt3=read.table('newBW_1_totalTE_which_overlap_gene_ChIP_level.gz',skip=1)
