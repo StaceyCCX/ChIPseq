@@ -37,6 +37,8 @@ axis(2,at=c(1,2,3,4,5),labels=ylabel,font=2,cex.axis=1.5)
 title(xlab='genome position (bps)',ylab = 'ChIP level',cex.lab=1.5,font.lab=2,main='EDM2 F1 ChIP level in TE region')
 lines(all$y2,col='blue',lwd=5)
 lines(all$y3,col='red',lwd=5)
+legend('topright',c('sample1 ','sample 2','sample 3'),col=c('grey','blue','red'),lty=1,bty='n',border=F)
+
 
 plot(all$x[1:180],all$y1[181:360],type = 'l',ann=F,ylim=c(1,5),xlab = 'position',ylab = 'chip level',xaxt='n',yaxt='n',lwd=5,col='grey')
 title(xlab='genome position (bps)',ylab = 'ChIP level',cex.lab=1.5,font.lab=2,main='EDM2 F2 ChIP level in TE region')
