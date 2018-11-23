@@ -1,3 +1,5 @@
+### nl test.bed>test.saf # change bed file into saf annotation file
+### featureCounts -T 20 -p -C -F SAF -a test.saf  -o test.txt *bam # count fragment in saf regions 
 rm(list = ls())
 
 filelist=list.files(pattern = 'featureCounts_right_.*.txt$')
